@@ -38,16 +38,32 @@
   nav ul {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
   
   nav li {
-    margin-left: 1em;
+    position: relative;
   }
   
-  nav a {
-    color: #333;
+  nav li a {
+    display: block;
+    padding: 1em;
     text-decoration: none;
   }
+  
+  nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  
+  nav li:hover ul {
+    display: block;
+  }
+  
   
   main {
     max-width: 800px;
@@ -94,48 +110,3 @@
       margin: 0.5em 0;
     }
   }
-/* style.css (continued) */
-
-/* Set up basic layout for categories page */
-main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  ul {
-    width: 20%;
-    margin-right: 2%;
-    list-style: none;
-  }
-  
-  li {
-    margin-bottom: 1em;
-  }
-  
-  h3 {
-    width: 78%;
-    margin-top: 2em;
-  }
-  
-  /* Set up responsive styles for categories page */
-  @media (max-width: 800px) {
-    ul {
-      width: 100%;
-      margin-right: 0;
-    }
-  
-    h3 {
-      width: 100%;
-    }
-  }
-
-  .slider {
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-  .slider ul {
-    display: inline-block;
-    transition: transform 0.5s ease;
-  }
-  
