@@ -1,0 +1,131 @@
+/* style.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set up basic typography */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+  
+  /* Set up basic layout */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #eee;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-left: 1em;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  footer {
+    background-color: #eee;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  footer li {
+    margin-left: 1em;
+  }
+  
+  footer a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Set up responsive styles */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 0.5em 0;
+    }
+  }
+/* style.css (continued) */
+
+/* Set up basic layout for categories page */
+main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  ul {
+    width: 20%;
+    margin-right: 2%;
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 1em;
+  }
+  
+  h3 {
+    width: 78%;
+    margin-top: 2em;
+  }
+  
+  /* Set up responsive styles for categories page */
+  @media (max-width: 800px) {
+    ul {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    h3 {
+      width: 100%;
+    }
+  }
+
