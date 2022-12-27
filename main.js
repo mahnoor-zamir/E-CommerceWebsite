@@ -1,19 +1,35 @@
-const signUp = document.querySelector('.sign-up');
-const signIn = document.querySelector('.sign-in');
+const container = document.querySelector(".container"),
+      pwShowHide = document.querySelectorAll(".showHidePw"),
+      pwFields = document.querySelectorAll(".password"),
+      signUp = document.querySelector(".signup-link"),
+      login = document.querySelector(".login-link");
 
+    //   js code to show/hide password and change icon
+    pwShowHide.forEach(eyeIcon =>{
+        eyeIcon.addEventListener("click", ()=>{
+            pwFields.forEach(pwField =>{
+                if(pwField.type ==="password"){
+                    pwField.type = "text";
 
-const btn1 = document.querySelector('.opposite-btn1');
-const btn2 = document.querySelector('.opposite-btn2');
+                    pwShowHide.forEach(icon =>{
+                        icon.classList.replace("uil-eye-slash", "uil-eye");
+                    })
+                }else{
+                    pwField.type = "password";
 
+                    pwShowHide.forEach(icon =>{
+                        icon.classList.replace("uil-eye", "uil-eye-slash");
+                    })
+                }
+            }) 
+        })
+    })
 
-// Switches to 'Create Account'
-btn1.addEventListener('click', () => {
-  signUp.style.display = 'block';
-  signIn.style.display = 'none'; 
-});
-
-// Switches to 'Sign In'
-btn2.addEventListener('click', () => {
-  signUp.style.display = 'none';
-  signIn.style.display = 'block';
-});
+    // js code to appear signup and login form
+    signUp.addEventListener("click", ( )=>{
+        container.classList.add("active");
+    });
+    login.addEventListener("click", ( )=>{
+        container.classList.remove("active");
+    });
+ 
