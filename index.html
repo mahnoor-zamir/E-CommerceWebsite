@@ -9,27 +9,20 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="menu-btn">
-          <div class="menu-btn__burger"></div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="categories.html" >Categories</a>
+                    <div class="sub-menu">
+                        <li><a href="categories.html#apparels">Apparels</a></li>
+                    </div>
+                </li>
+                <li><a href="about.html" >About US</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+            </ul>
         </div>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="categories.html">Categories</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="menu__sign-up-login">
-            <form>
-              <input type="text" placeholder="Username">
-              <input type="password" placeholder="Password">
-              <button type="submit">Sign In</button>
-              <button type="submit">Sign Up</button>
-            </form>
-          </li>
-        </ul>
-      </nav>
     </header>
-    <main>
+    <section class="desc">
       <h2>Welcome to Our Online Ecommerce Store</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -38,7 +31,7 @@
         cursus. Suspendisse potenti. Aenean euismod dolor sed ligula
         pellentesque, id porttitor est faucibus.
       </p>
-    </main>
+    </section>
     <footer>
       <p>Copyright 2021 Online Ecommerce Store</p>
     </footer>
