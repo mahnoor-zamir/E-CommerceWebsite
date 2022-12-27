@@ -1,14 +1,19 @@
-let signup = document.querySelector(".signup");
-let login = document.querySelector(".login");
-let slider = document.querySelector(".slider");
-let formSection = document.querySelector(".form-section");
-  
-signup.addEventListener("click", () => {
-    slider.classList.add("moveslider");
-    formSection.classList.add("form-section-move");
+const signUp = document.querySelector('.sign-up');
+const signIn = document.querySelector('.sign-in');
+
+
+const btn1 = document.querySelector('.opposite-btn1');
+const btn2 = document.querySelector('.opposite-btn2');
+
+
+// Switches to 'Create Account'
+btn1.addEventListener('click', () => {
+  signUp.style.display = 'block';
+  signIn.style.display = 'none'; 
 });
-  
-login.addEventListener("click", () => {
-    slider.classList.remove("moveslider");
-    formSection.classList.remove("form-section-move");
+
+// Switches to 'Sign In'
+btn2.addEventListener('click', () => {
+  signUp.style.display = 'none';
+  signIn.style.display = 'block';
 });
