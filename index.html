@@ -3,37 +3,87 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Ecommerce Store</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
   </head>
   <body>
-    <header>
-        <div class="menu-bar">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="categories.html" >Categories</a>
-                    <div class="sub-menu">
-                        <li><a href="categories.html#apparels">Apparels</a></li>
-                    </div>
-                </li>
-                <li><a href="about.html" >About US</a></li>
-                <li><a href="contact.html" >Contact</a></li>
-            </ul>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Categories</a>
+          <ul class="dropdown-content">
+            <li><a href="#category1">Category 1</a></li>
+            <li><a href="#category2">Category 2</a></li>
+            <li><a href="#category3">Category 3</a></li>
+            <li><a href="#category4">Category 4</a></li>
+            <li><a href="#category5">Category 5</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>    
+      <section class="description">
+        <div id="desc-box">
+          <h2>
+            ABOUT THE PROGRAM
+          </h2>
+          <p>
+            The program is a 8086 microprocessor simulator that displays the machine code for given instructions. Moreover, it displays the contents of memory and registers with clock cycles involved in each instruction.
+          </p>
         </div>
-    </header>
-    <section class="desc">
-      <h2>Welcome to Our Online Ecommerce Store</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-        ultricies justo a massa convallis, id luctus nulla ullamcorper.
-        Quisque consectetur velit vel velit vehicula, nec maximus nunc
-        cursus. Suspendisse potenti. Aenean euismod dolor sed ligula
-        pellentesque, id porttitor est faucibus.
-      </p>
+      </section>
+      <section class="container-sec">
+        <div class="container">
+  
+          <!-- upper button section to select
+               the login or signup form -->
+          <div class="slider"></div>
+          <div class="btn">
+              <button class="login">Login</button>
+              <button class="signup">Signup</button>
+          </div>
+    
+          <!-- Form section that contains the
+               login and the signup form -->
+          <div class="form-section">
+    
+              <!-- login form -->
+              <div class="login-box">
+                  <input type="email" 
+                         class="email ele" 
+                         placeholder="youremail@email.com">
+                  <input type="password"
+                         class="password ele" 
+                         placeholder="password">
+                  <button class="clkbtn">Login</button>
+              </div>
+    
+              <!-- signup form -->
+              <div class="signup-box">
+                  <input type="text" 
+                         class="name ele" 
+                         placeholder="Enter your name">
+                  <input type="email" 
+                         class="email ele" 
+                         placeholder="youremail@email.com">
+                  <input type="password" 
+                         class="password ele" 
+                         placeholder="password">
+                  <input type="password" 
+                         class="password ele" 
+                         placeholder="Confirm password">
+                  <button class="clkbtn">Signup</button>
+              </div>
+          </div>
+      </div>
+      </section>
+      <footer>
+        <p>Copyright 2021 Online Ecommerce Store</p>
+      </footer>
     </section>
-    <footer>
-      <p>Copyright 2021 Online Ecommerce Store</p>
-    </footer>
+  <script src="main.js"></script>
   </body>
 </html>
