@@ -5,19 +5,25 @@
     <meta charset="utf-8">
     <title>Online Ecommerce Store - Categories</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
   </head>
   <body>
     <header>
-      <h1>Online Ecommerce Store</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="categories.html">Categories</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <div id="dropdown" class="active">
+              <button class="dropbtn">Categories
+                <i class="fa fa-caret-down" ></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="categories.html">Link 1</a>
+                <a href="categories.html#apparel">Link 2</a>
+                <a href="categories.html #slide3">Link 3</a>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
     </header>
     <main>
       <h2>Browse Our Categories</h2>
@@ -26,7 +32,7 @@
         <li><a href="#electronics">Electronics</a></li>
         <li><a href="#home-goods">Home Goods</a></li>
       </ul>
-      <h3 id="clothing">Clothing</h3>
+      <h3 id="apparel">Clothing</h3>
       <!-- Slider for the Clothing category goes here -->
       <div class="slider">
         <div class="slide">
