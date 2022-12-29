@@ -250,29 +250,39 @@ nav .dropdown:hover .dropdown-content {
   height: 180vh;
   background: url('img/bg.jpeg')
    center / cover;
-  color: black;
 }
 
 .container{
   width: 90%;
-  height: 100%;
+  height:50%;
   max-width:1200px;
   margin: 0 auto;
-  justify-content: center;
-  align-content: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* .container #about-brand{
+  height: 70%;
+
+}
+*/
+.container #about-team{
+  height:40%;
+  padding-top:60%;
+
+}  
 
 .container .info{
   margin-top: 20%;
   justify-content: center;
 }
 
-#about-heading{
+.about-heading{
     font-size: 3rem;
     margin-bottom: 1rem;
-    letter-spacing: 1px;
-
+    margin-top: 5rem;
+    align-content: center;
 }
 
 .container .info h2{
@@ -285,9 +295,18 @@ nav .dropdown:hover .dropdown-content {
     max-width: 80%;
 }
 
-.container .team{
+.members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .container .team{
   width: 100%;
   margin-top: 60%;
+}
+
+.team img{
+height: 90px;
 }
 /* 
 .container .team .h3 {
@@ -314,6 +333,8 @@ nav .dropdown:hover .dropdown-content {
   text-align: center;
   overflow: hidden;
   position: relative;
+  height: 30%;
+  width: 33.3%;
 }
 .our-team img{
   width: 100%;
@@ -462,7 +483,7 @@ nav .dropdown:hover .dropdown-content {
   .our-team .title:after{
       top: -83px;
   }
-}
+} */
 
 
 .contact-container{
