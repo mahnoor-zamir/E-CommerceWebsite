@@ -77,7 +77,7 @@ nav .dropdown:hover .dropdown-content {
 }
 
 
-#slider-text{
+/* #slider-text{
   padding-top: 40px;
   display: block;
 }
@@ -243,16 +243,16 @@ nav .dropdown:hover .dropdown-content {
     transform: translate3d(0, 0, 0);
     left: 0;
   }
-}
+} */
 
-#hero{
+/* #hero{
   width:100%;
   height: 180vh;
   background: url('img/bg.jpeg')
    center / cover;
    color:black;
-}
-
+} */
+/* 
 .about-container{
   width: 90%;
   height:50%;
@@ -260,7 +260,7 @@ nav .dropdown:hover .dropdown-content {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+     align-items: center; 
 }
 
 .background {
@@ -410,223 +410,7 @@ display:block;
     /* align-content: center; 
     margin-top: 0;*/
 
-} 
-
-#about-team.about-container.about-heading{
-  align-items:center;
-  justify-content: center;
-} 
- 
-.about-container .info h2{
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.about-container .info p{
-    font-size: 1.2rem;
-    max-width: 80%;
-}
-
-.team{
-  justify-content: center; 
-
-}
-
-.members {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100%;
-    width:100%;
-}
-
-.col-md-3 col-sm-6{
-  height:100%;
-  display:flex;
-} 
-
-.container .team{
-  width: 100%;
-  margin-top: 60%;
-}
-.team img{
-height: 90px;
-}
-
-.container .team .h3 {
-  font-size: 3rem;
-}
-.container .team ul{
-  display:flex;
-  width: 100%;
-  align-content: left;
-}
-.container .team ul li{
-  padding: 50px;
-} 
- 
-.col-md-3 col-sm-6{
-  display:flex;
-  align-content: space-between;
-  float: left;
-  height:100%;
-}
-
-.our-team{
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  height: 30%;
-  width: 33.3%;
-}
-.our-team img{
-  width: 100%;
-  height: auto;
-}
-.our-team .team-content{
-  float: left;
-  width: 100%;
-  background: #3f2b4f;
-  color: #fff;
-  padding: 15px 0 10px 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  transition: all 0.3s ease 0s;
-}
-.our-team:hover .team-content{
-  padding-bottom: 40px;
-}
-.our-team .team-content:before,
-.our-team .team-content:after{
-  content: "";
-  width: 60%;
-  height: 38px;
-  background: #3f2b4f;
-  position: absolute;
-  top: -18px;
-  transform: rotate(15deg);
-  z-index: -1;
-}
-.our-team .team-content:before{
-  left: -3%;
-}
-.our-team .team-content:after{
-  right: -3%;
-  transform: rotate(-15deg);
-}
-.our-team .title{
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin: 0 0 7px 0;
-  position: relative;
-}
-.our-team .title:before,
-.our-team .title:after{
-  content: "";
-  width: 7px;
-  height: 93px;
-  background: #ff5543;
-  position: absolute;
-  top: -78px;
-  z-index: -2;
-  transform: rotate(-74deg);
-}
-.our-team .title:before{
-  left: 32%;
-}
-.our-team .title:after{
-  right: 32%;
-  transform: rotate(74deg);
-}
-.our-team .post{
-  display: block;
-  font-size: 13px;
-  text-transform: capitalize;
-  margin-bottom: 8px;
-}
-.our-team .social-links{
-  list-style: none;
-  padding: 0 0 15px 0;
-  margin: 0;
-  position: absolute;
-  bottom: -40px;
-  right: 0;
-  left: 0;
-  transition: all 0.5s ease 0s;
-}
-.our-team:hover .social-links{
-  bottom: 0;
-}
-.our-team .social-links li{
-  display: inline-block;
-}
-.our-team .social-links li a{
-  display: block;
-  font-size: 16px;
-  color: #aad6e1;
-  margin-right: 6px;
-  transition: all 0.5s ease 0s;
-}
-.our-team .social-links li:last-child a{
-  margin-right: 0;
-}
-.our-team .social-links li a:hover{
-  color: #ff5543;
-}
-@media only screen and (max-width: 990px){
-  .our-team{ margin-bottom: 30px; }
-  .our-team .team-content:before,
-  .our-team .team-content:after{
-      height: 50px;
-      top: -24px;
-  }
-  .our-team .title:before,
-  .our-team .title:after{
-      top: -85px;
-      height: 102px;
-  }
-  .our-team .title:before{
-      left: 35%;
-  }
-  .our-team .title:after{
-      right: 35%;
-  }
-}
-@media only screen and (max-width: 767px){
-  .our-team .team-content:before,
-  .our-team .team-content:after{
-      height: 75px;
-  }
-  .our-team .team-content:before{
-      transform: rotate(8deg);
-  }
-  .our-team .team-content:after{
-      transform: rotate(-8deg);
-  }
-  .our-team .title:before,
-  .our-team .title:after{
-      width: 10px;
-      top: -78px;
-      height: 102px;
-  }
-  .our-team .title:before{
-      left: 42.5%;
-      transform: rotate(-82deg);
-  }
-  .our-team .title:after{
-      right: 42.5%;
-      transform: rotate(82deg);
-  }
-}
-@media only screen and (max-width: 480px){
-  .our-team .title:before,
-  .our-team .title:after{
-      top: -83px;
-  }
-} 
+/*
 
 
   
@@ -982,7 +766,7 @@ height: 90px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 } */
-
+/* 
 :root{
     --primary-color: #5344db;
     --accent-color: #5344db;
@@ -1012,7 +796,7 @@ height: 90px;
 
 /** product image **/
 
-.single-product .product-image{
+/* .single-product .product-image{
     width: 100%;
 }
 
@@ -1033,7 +817,7 @@ height: 90px;
 
 
 /** product title **/
-
+/*
 .product-title{
     margin-top: 20px;
 
@@ -1045,7 +829,7 @@ height: 90px;
     letter-spacing: -0.02rem;
 }
 
-/** Product price **/
+
 .product-price{
     display: flex;
     position: relative;
@@ -1065,7 +849,7 @@ height: 90px;
     margin-left: 12px;
 }
 
-/** Product Details **/
+
 .product-details{
     margin: 10px 0;
 }
@@ -1080,7 +864,6 @@ height: 90px;
 }
 
 
-/** divider **/
 .divider{
     display: block;
     height: 1px;
@@ -1089,7 +872,6 @@ height: 90px;
     margin: 20px 0;
 }
 
-/** product Button Group **/
 
 .product-btn-group{
     display: flex;
@@ -1147,7 +929,7 @@ height: 90px;
 
 
 /** Responsive Mobile **/
-@media screen and (max-width:520px) {
+/* @media screen and (max-width:520px) {
     .container{
         padding: 20px;
         height: auto;
@@ -1210,7 +992,7 @@ height: 90px;
       transform: translate3d(0, 0, 0);
       left: 0;
     }
-  }
+  }  */ */
 
 .description{
   display: flex;
@@ -1521,7 +1303,7 @@ ul li:hover {
   height: 500px;
 }
 
-.product-sec{
+.category-sec div{
   text-align: center;
   border-radius: 20px;
   border-width:2px;
