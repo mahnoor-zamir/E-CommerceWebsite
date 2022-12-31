@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 
 $('.tab a').on('click', function (e) {
@@ -16,7 +15,7 @@ $('.tab a').on('click', function (e) {
   $(target).fadeIn(800);
   
 });
-=======
+
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -26,8 +25,7 @@ function myFunction() {
     x.className = "topnav";
   }
 }
->>>>>>> 073ff7fddb535964344f63cd0430f69d757d946f
-=======
+
 const container = document.querySelector(".container"),
       pwShowHide = document.querySelectorAll(".showHidePw"),
       pwFields = document.querySelectorAll(".password"),
@@ -83,6 +81,8 @@ const container = document.querySelector(".container"),
       });
       });
       
+
+    //   product specification
       const sliderMainImage = document.getElementById("product-main-image"); //product container image
       const sliderImageList = document.getElementsByClassName("image-list"); // image thumblian group selection
       console.log(sliderImageList);
@@ -106,3 +106,8 @@ const container = document.querySelector(".container"),
           sliderMainImage.src = sliderImageList[3].src;
           console.log(sliderMainImage.src);
       };
+
+//add product
+app.get('/add-product', (req, res) => {
+    res.sendFile(path.join(staticPath, "addProduct.html"));
+})       
