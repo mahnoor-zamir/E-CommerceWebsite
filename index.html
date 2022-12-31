@@ -7,7 +7,7 @@
     <title>Online Ecommerce Store</title>
     
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <nav>
@@ -29,12 +29,17 @@
     </nav>    
       <section class="description">
         <div id="desc-box">
-          <h2>
-            ABOUT THE PROGRAM
-          </h2>
+          <div>
+            <h2>
+              ABOUT THE PROGRAM
+            </h2>
+          </div>
+          <div>
           <p>
             The program is a 8086 microprocessor simulator that displays the machine code for given instructions. Moreover, it displays the contents of memory and registers with clock cycles involved in each instruction.
           </p>
+          </div>
+
         </div>
       </section>
       <section id="container-sec">
@@ -42,6 +47,7 @@
           <div class="forms">
               <div class="form login">
                   <span class="title">Login</span>
+  
                   <form action="#">
                       <div class="input-field">
                           <input type="text" placeholder="Enter your email" required>
@@ -59,6 +65,7 @@
                               <label for="logCheck" class="text">Remember me</label>
                           </div>
                           
+                          <a href="#" class="text">Forgot password?</a>
                       </div>
   
                       <div class="input-field button">
@@ -94,6 +101,13 @@
                           <input type="password" class="password" placeholder="Confirm a password" required>
                           <i class="uil uil-lock icon"></i>
                           <i class="uil uil-eye-slash showHidePw"></i>
+                      </div>
+  
+                      <div class="checkbox-text">
+                          <div class="checkbox-content">
+                              <input type="checkbox" id="termCon">
+                              <label for="termCon" class="text">I accepted all terms and conditions</label>
+                          </div>
                       </div>
   
                       <div class="input-field button">

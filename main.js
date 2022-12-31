@@ -81,33 +81,124 @@ const container = document.querySelector(".container"),
       });
       });
       
-
-    //   product specification
       const sliderMainImage = document.getElementById("product-main-image"); //product container image
       const sliderImageList = document.getElementsByClassName("image-list"); // image thumblian group selection
       console.log(sliderImageList);
       
-      sliderImageList[0].onclick = function(){
-          sliderMainImage.src = sliderImageList[0].src;
-          console.log(sliderMainImage.src);
-      };
-      
-      sliderImageList[1].onclick = function(){
-          sliderMainImage.src = sliderImageList[1].src;
-          console.log(sliderMainImage.src);
-      };
-      
-      sliderImageList[2].onclick = function(){
-          sliderMainImage.src = sliderImageList[2].src;
-          console.log(sliderMainImage.src);
-      };
-      
-      sliderImageList[3].onclick = function(){
-          sliderMainImage.src = sliderImageList[3].src;
-          console.log(sliderMainImage.src);
-      };
+//       // JavaScript Document
+// $(document).ready(function() {
+//     $('#autoWidth').lightSlider({
+//         autoWidth:true,
+//         loop:true,
+//         onSliderLoad: function() {
+//             $('#autoWidth').removeClass('cS-hidden');
+//         } 
+//     });  
+//   });
+
+//   var cardDrop = document.getElementById('card-dropdown');
+// var activeDropdown;
+// cardDrop.addEventListener('click',function(){
+//   var node;
+//   for (var i = 0; i < this.childNodes.length-1; i++)
+//     node = this.childNodes[i];
+//     if (node.className === 'dropdown-select') {
+//       node.classList.add('visible');
+//        activeDropdown = node; 
+//     };
+// })
+
+// window.onclick = function(e) {
+//   console.log(e.target.tagName)
+//   console.log('dropdown');
+//   console.log(activeDropdown)
+//   if (e.target.tagName === 'LI' && activeDropdown){
+//     if (e.target.innerHTML === 'Master Card') {
+//       document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/2vbqk5lcpi7hjoc/MasterCard_Logo.svg.png';
+//           activeDropdown.classList.remove('visible');
+//       activeDropdown = null;
+//       e.target.innerHTML = document.getElementById('current-card').innerHTML;
+//       document.getElementById('current-card').innerHTML = 'Master Card';
+//     }
+//     else if (e.target.innerHTML === 'American Express') {
+//          document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/f5hyn6u05ktql8d/amex-icon-6902.png';
+//           activeDropdown.classList.remove('visible');
+//       activeDropdown = null;
+//       e.target.innerHTML = document.getElementById('current-card').innerHTML;
+//       document.getElementById('current-card').innerHTML = 'American Express';      
+//     }
+//     else if (e.target.innerHTML === 'Visa') {
+//          document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png';
+//           activeDropdown.classList.remove('visible');
+//       activeDropdown = null;
+//       e.target.innerHTML = document.getElementById('current-card').innerHTML;
+//       document.getElementById('current-card').innerHTML = 'Visa';
+//     }
+//   }
+//   else if (e.target.className !== 'dropdown-btn' && activeDropdown) {
+//     activeDropdown.classList.remove('visible');
+//     activeDropdown = null;
+//   }
+// }
+
 
 //add product
 app.get('/add-product', (req, res) => {
     res.sendFile(path.join(staticPath, "addProduct.html"));
 })       
+//       // JavaScript Document
+// $(document).ready(function() {
+//     $('#autoWidth').lightSlider({
+//         autoWidth:true,
+//         loop:true,
+//         onSliderLoad: function() {
+//             $('#autoWidth').removeClass('cS-hidden');
+//         } 
+//     });  
+//   });
+
+//   var cardDrop = document.getElementById('card-dropdown');
+// var activeDropdown;
+// cardDrop.addEventListener('click',function(){
+//   var node;
+//   for (var i = 0; i < this.childNodes.length-1; i++)
+//     node = this.childNodes[i];
+//     if (node.className === 'dropdown-select') {
+//       node.classList.add('visible');
+//        activeDropdown = node; 
+//     };
+// })
+
+// window.onclick = function(e) {
+//   console.log(e.target.tagName)
+//   console.log('dropdown');
+//   console.log(activeDropdown)
+//   if (e.target.tagName === 'LI' && activeDropdown){
+//     if (e.target.innerHTML === 'Master Card') {
+//       document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/2vbqk5lcpi7hjoc/MasterCard_Logo.svg.png';
+//           activeDropdown.classList.remove('visible');
+//       activeDropdown = null;
+//       e.target.innerHTML = document.getElementById('current-card').innerHTML;
+//       document.getElementById('current-card').innerHTML = 'Master Card';
+//     }
+//     else if (e.target.innerHTML === 'American Express') {
+//          document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/f5hyn6u05ktql8d/amex-icon-6902.png';
+//           activeDropdown.classList.remove('visible');
+//       activeDropdown = null;
+//       e.target.innerHTML = document.getElementById('current-card').innerHTML;
+//       document.getElementById('current-card').innerHTML = 'American Express';      
+//     }
+//     else if (e.target.innerHTML === 'Visa') {
+//          document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png';
+//           activeDropdown.classList.remove('visible');
+//       activeDropdown = null;
+//       e.target.innerHTML = document.getElementById('current-card').innerHTML;
+//       document.getElementById('current-card').innerHTML = 'Visa';
+//     }
+//   }
+//   else if (e.target.className !== 'dropdown-btn' && activeDropdown) {
+//     activeDropdown.classList.remove('visible');
+//     activeDropdown = null;
+//   }
+// }
+
