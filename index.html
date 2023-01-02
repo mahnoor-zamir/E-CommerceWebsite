@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Ecommerce Store</title>
     
@@ -39,90 +40,82 @@
             The program is a 8086 microprocessor simulator that displays the machine code for given instructions. Moreover, it displays the contents of memory and registers with clock cycles involved in each instruction.
           </p>
           </div>
-
         </div>
       </section>
-      <section id="container-sec">
-        <div class="container">
-          <div class="forms">
-              <div class="form login">
-                  <span class="title">Login</span>
-  
-                  <form action="#">
-                      <div class="input-field">
-                          <input type="text" placeholder="Enter your email" required>
-                          <i class="uil uil-envelope icon"></i>
-                      </div>
-                      <div class="input-field">
-                          <input type="password" class="password" placeholder="Enter your password" required>
-                          <i class="uil uil-lock icon"></i>
-                          <i class="uil uil-eye-slash showHidePw"></i>
-                      </div>
-  
-                      <div class="checkbox-text">
-                          <div class="checkbox-content">
-                              <input type="checkbox" id="logCheck">
-                              <label for="logCheck" class="text">Remember me</label>
-                          </div>
-                          
-                          <a href="#" class="text">Forgot password?</a>
-                      </div>
-  
-                      <div class="input-field button">
-                          <input type="button" value="Login">
-                      </div>
-                  </form>
-  
-                  <div class="login-signup">
-                      <span class="text">Not a member?
-                          <a href="#" class="text signup-link">Signup Now</a>
-                      </span>
-                  </div>
-              </div>
-  
-              <!-- Registration Form -->
-              <div class="form signup">
-                  <span class="title">Registration</span>
-  
-                  <form action="#">
-                      <div class="input-field">
-                          <input type="text" placeholder="Enter your name" required>
-                          <i class="uil uil-user"></i>
-                      </div>
-                      <div class="input-field">
-                          <input type="text" placeholder="Enter your email" required>
-                          <i class="uil uil-envelope icon"></i>
-                      </div>
-                      <div class="input-field">
-                          <input type="password" class="password" placeholder="Create a password" required>
-                          <i class="uil uil-lock icon"></i>
-                      </div>
-                      <div class="input-field">
-                          <input type="password" class="password" placeholder="Confirm a password" required>
-                          <i class="uil uil-lock icon"></i>
-                          <i class="uil uil-eye-slash showHidePw"></i>
-                      </div>
-  
-                      <div class="checkbox-text">
-                          <div class="checkbox-content">
-                              <input type="checkbox" id="termCon">
-                              <label for="termCon" class="text">I accepted all terms and conditions</label>
-                          </div>
-                      </div>
-  
-                      <div class="input-field button">
-                          <input type="button" value="Signup">
-                      </div>
-                  </form>
-  
-                  <div class="login-signup">
-                      <span class="text">Already a member?
-                          <a href="#" class="text login-link">Login Now</a>
-                      </span>
-                  </div>
-              </div>
+      <section class="container-sec">
+        <div class="wrapper">
+          <div class="title-text">
+             <div class="title login">
+                Login Form
+             </div>
+             <div class="title signup">
+                Signup Form
+             </div>
           </div>
-      </div>
+          <div class="form-container">
+             <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Signup</label>
+                <div class="slider-tab"></div>
+             </div>
+             <div class="form-inner">
+                <form action="#" class="login">
+                   <div class="field">
+                      <input type="text" placeholder="Email Address" required>
+                   </div>
+                   <div class="field">
+                      <input type="password" placeholder="Password" required>
+                   </div>
+                   <div class="pass-link">
+                      <a href="#">Forgot password?</a>
+                   </div>
+                   <div class="field btn">
+                      <div class="btn-layer"></div>
+                      <input type="submit" value="Login">
+                   </div>
+                   <div class="signup-link">
+                      Not a member? <a href="">Signup now</a>
+                   </div>
+                </form>
+                <form action="#" class="signup">
+                   <div class="field">
+                      <input type="text" placeholder="Email Address" required>
+                   </div>
+                   <div class="field">
+                      <input type="password" placeholder="Password" required>
+                   </div>
+                   <div class="field">
+                      <input type="password" placeholder="Confirm password" required>
+                   </div>
+                   <div class="field btn">
+                      <div class="btn-layer"></div>
+                      <input type="submit" value="Signup">
+                   </div>
+                </form>
+             </div>
+          </div>
+       </div>
+       <script>
+          const loginText = document.querySelector(".title-text .login");
+          const loginForm = document.querySelector("form.login");
+          const loginBtn = document.querySelector("label.login");
+          const signupBtn = document.querySelector("label.signup");
+          const signupLink = document.querySelector("form .signup-link a");
+          signupBtn.onclick = (()=>{
+            loginForm.style.marginLeft = "-50%";
+            loginText.style.marginLeft = "-50%";
+          });
+          loginBtn.onclick = (()=>{
+            loginForm.style.marginLeft = "0%";
+            loginText.style.marginLeft = "0%";
+          });
+          signupLink.onclick = (()=>{
+            signupBtn.click();
+            return false;
+          });
+       </script>
       </section>
       <footer>
         <p>Copyright 2021 Online Ecommerce Store</p>
